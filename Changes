@@ -1,0 +1,24 @@
+Revision history for Perl extension Data::BFDump.
+
+0.2  Sun Apr 21 19:57:54 2002
+	- original version; created by h2xs 1.21 with options
+		-XA -n Data::BFDump -v 0.2
+0.2x- Lots of bugfixes. Many thanks to Dan Brook.
+0.3 5/5/2002 7:34PM
+	- Complete rewrite of test framework. Test methods now live in Data::BFDump::Test
+	- Fixed various bugs in 0.2x line
+	- Many more tests
+	- Arrays that contain named scalars now use Data::BFDump->capture();
+	- Added ref slicing.  Rules for what can be sliced are not set in stone as of yet.
+	- Added property accessor: coderef()
+    - Fixed annoying glob related bug.
+    - Implemented _part_ of Data::Dumper's interface.
+    	- Indent(2) Indent(3) map into $self->{show_index}
+    		(need to add method based accessor)
+    	- Quotekeys (maps into quote_prop("key_quote"))
+    	- I don't anticipate implementing the _complete_ Data::Dumper interface
+    - Added a big chunk of Data::Dumper's test suite
+    	- Not all of these tests are relevant due to BFDump not supporting the full Dumper interface
+
+
+

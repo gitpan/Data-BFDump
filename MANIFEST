@@ -1,0 +1,13 @@
+BFDump.pm
+BFDump/Test.pm
+Changes
+Makefile.PL
+MANIFEST
+TODO
+README
+t/basic.t
+t/glob.t
+t/sub.t
+t/object.t
+t/dumper.t
+

@@ -1,0 +1,24 @@
+TODO For Data::BFDump
+---------------------
+* !!!!Update Pod!!!!
+* Convert the rest of the tests in t/dumper.t to Test_Dump style
+* Solidify the property interface for BFDump
+	Convert constants to properties
+	Expose hash_key/hash_values that are properties through a method interface
+	Implement Indent(1) Indent(2)
+	Figure out how to implement Deepcopy
+	Maxdepth
+	Terse ? (is it needed at all?)
+	Freeze/Thaw (enhanced :-) (by object or by class)
+* Implement filtering
+	(see Freeze/Thaw enhanced)
+* Implement showpath (like Indent(3) but show the full path and not just the array indexes)
+* Implement Dump_As
+	(see filtering)
+* Implement Data::Dumpers property accessors and their functionality
+	Possibly as pass throughs to the appropriate BFDump property
+	Autoload Dumper accessors as needed?
+* Debug and Test Style('Dumper') interface/behaviour
+* More tests (look at the Data::Denter test suite?)
+* More tests
+* Implement Diff_Dumps()
